@@ -6,7 +6,7 @@ This project involves an ESP32 microcontroller that reads sensor data through Mo
 ## Requirements
 Ensure you have the following components and libraries:
 
-## ESP32 microcontroller
+ - ESP32 microcontroller
  - Arduino IDE with ESP32 board support
  - ArduinoJson library
  - BluetoothSerial library
@@ -14,13 +14,13 @@ Ensure you have the following components and libraries:
 
 ## Setup Instructions
 
-**Install Arduino IDE:** Download and install the Arduino IDE from the official website.
+ - **Install Arduino IDE:** Download and install the Arduino IDE from the official website.
 
-**Add ESP32 Board Support:** In Arduino IDE, go to ```File > Preferences```. Add the following URL to the "Additional Board Manager URLs": ```https://dl.espressif.com/dl/package_esp32_index.json```. Then, go to ```Tools > Board > Board Manager```, search for ```esp32```, and install it.
+ - **Add ESP32 Board Support:** In Arduino IDE, go to ```File > Preferences```. Add the following URL to the "Additional Board Manager URLs": ```https://dl.espressif.com/dl/package_esp32_index.json```. Then, go to ```Tools > Board > Board Manager```, search for ```esp32```, and install it.
 
-**Install Required Libraries:** Go to ```Sketch > Include Library > Manage Libraries```, search for and install ```ArduinoJson```, ```BluetoothSerial```, and ```ModbusMaster``` libraries.
+ - **Install Required Libraries:** Go to ```Sketch > Include Library > Manage Libraries```, search for and install ```ArduinoJson```, ```BluetoothSerial```, and ```ModbusMaster``` libraries.
 
-**Enable Bluetooth and SPP in ESP32:** Ensure that Bluetooth and Serial Port Profile (SPP) are enabled in the ESP32 configuration. If not, use the command ```make menuconfig``` to enable them.
+ - **Enable Bluetooth and SPP in ESP32:** Ensure that Bluetooth and Serial Port Profile (SPP) are enabled in the ESP32 configuration. If not, use the command ```make menuconfig``` to enable them.
 
 ## Description
 The code in our project takes sensor data via Modbus, sets up Bluetooth on an ESP32, and sends it as a JSON object. The data is sent every 5 seconds.
