@@ -1,7 +1,7 @@
 # carrycrop2x-mobile-app
 
 ## Introduction
-This project involves an ESP32 microcontroller that reads sensor data through Modbus and transmits it via Bluetooth. The sensor data includes values such as moisture, temperature, conductivity, pH, nitrogen, phosphorus, and potassium. The data is serialized into JSON format and sent over Bluetooth. Additionally, the system can handle and log errors during data reading.
+This project is a mobile application that involves an ESP32 microcontroller which reads sensor data through Modbus and transmits it via Bluetooth. The sensor data includes values such as moisture, temperature, conductivity, pH, nitrogen, phosphorus, and potassium. The data is serialized into JSON format and sent over Bluetooth. Additionally, the system can handle and log errors during data reading.
 
 ## Requirements
 Ensure you have the following components and libraries:
